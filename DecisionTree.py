@@ -11,6 +11,7 @@
 import numpy as np
 from matplotlib import pyplot as plt
 import warnings
+from scipy import sparse as sps
 
 class Node:
     # A node stores its own depth (root = depth 0), its decision stump, its parent and child information
@@ -18,13 +19,17 @@ class Node:
     # Leaf nodes also store a constant label that is assigned to every data point that reaches that leaf
     def __init__( self, depth = 0, stump = (0,0), parent = None ):
         self.depth = depth
-        self.stump = stump
+        #self.stump = stump
         self.parent = parent
-        self.left = None
-        self.right = None
-        self.isLeaf = True
-        self.label = 0
-        self.ancestorSplitFeats = np.empty( [0,], dtype = int )
+        #self.left = None
+        #self.right = None
+        self.isLeaf = False
+        #self.label = 0
+        #self.ancestorSplitFeats = np.empty( [0,], dtype = int )
+        self.labels=[]
+        self.inputData=csr_matrix((0, 0), dtype=np.float64)
+        self.centMatrix=csr_matrix((0, 0), dtype=np.float64)
+        self.children=[]
         
     def predict( self, data ):
         # If I am a leaf I can predict rightaway
