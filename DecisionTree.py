@@ -27,7 +27,8 @@ class Node:
         #self.label = 0
         #self.ancestorSplitFeats = np.empty( [0,], dtype = int )
         self.labels=[]
-        self.inputData=csr_matrix((0, 0), dtype=np.float64)
+        self.inputX=csr_matrix((0, 0), dtype=np.float64)
+        self.inputy=csr_matrix((0, 0), dtype=np.float64)
         self.centMatrix=csr_matrix((0, 0), dtype=np.float64)
         self.children=[]
         
