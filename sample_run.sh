@@ -38,7 +38,7 @@ cd shallow
 
 # testing
 # Reads test features (in $tst_ft_file), FastXML model (in $model_dir), and writes test label scores to $score_file
-./bonsai_predict $tst_ft_file $score_file $model_dir
+./bonsai_predict $tst_ft_file $score_file ../$model_dir
 #if [ ! -f ${score_file} ]; then
 #    ./bonsai_predict $tst_ft_file $score_file $model_dir
 #else
