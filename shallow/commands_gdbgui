@@ -1,0 +1,1 @@
+./bonsai_train sandbox/data/eurlex/train_X_Xf.txt sandbox/data/eurlex/train_X_Y.txt sandbox/data/eurlex/train_X_XY.txt sandbox/results/eurlex/model -T 3 -s 0 -t 3 -w 100 -b 1.0 -c 1.0 -m 2 -f 0.1 -fcent 0 -k 0.0001 -siter 20 -q 0 -ptype 0 -ctype 0
