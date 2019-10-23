@@ -34,7 +34,7 @@ cd shallow
     -siter 20 \
     -q 0 \
     -ptype 0 \
-    -ctype 1
+    -ctype 2
 
 # testing
 # Reads test features (in $tst_ft_file), FastXML model (in $model_dir), and writes test label scores to $score_file

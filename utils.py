@@ -18,13 +18,14 @@ def load_data( filename, d, L ):
     y, _ = load_svmlight_file( "%s.y" % filename, multilabel = True, n_features = L, offset = 1 )
     return (X, y)
 
-def dump_data( X, y, filename ):
+def dump_data( X, y, foldername, filename ):
     (n, d) = X.shape
     (n1, L) = y.shape
+    filename = foldername + "/" + filename
     assert n1 == n, "Mismatch in number of feature vectors and number of label vectors"
     dummy = sps.csr_matrix( (n, 1) )
-    dump_svmlight_file( X, dummy, "%s.X" % filename, multilabel = True, zero_based = True, comment = "%d, %d" % (n, d) )
-    dump_svmlight_file( y, dummy, "%s.y" % filename, multilabel = True, zero_based = True, comment = "%d, %d" % (n, L) )
+    dump_svmlight_file( X, dummy, "%s_x_Xf.txt" % filename, multilabel = True, zero_based = True, comment = "%d, %d" % (n, d) )
+    dump_svmlight_file( y, dummy, "%s_x_Y.txt" % filename, multilabel = True, zero_based = True, comment = "%d, %d" % (n, L) )
 
 # Not the best way to do things in Python but I could not find a neater workaround
 # Let me know if you know one that avoids a messy loop
