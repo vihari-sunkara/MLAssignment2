@@ -1,8 +1,6 @@
 #!/bin/bash
 
-dataset="eurlex"
-data_dir="../sandbox/data/$dataset"
-results_dir="../sandbox/results/$dataset"
+
 model_dir="model"
 
 trn_ft_file="../assignmentData/trn_X_Xf.txt"
@@ -34,7 +32,7 @@ cd shallow
     -siter 20 \
     -q 0 \
     -ptype 0 \
-    -ctype 2
+    -ctype 0
 
 # testing
 # Reads test features (in $tst_ft_file), FastXML model (in $model_dir), and writes test label scores to $score_file

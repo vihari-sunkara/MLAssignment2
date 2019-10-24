@@ -1,5 +1,0 @@
-cat raw_trn_X_Xf.txt | sed 's/^.//' > trn_X_Xf.txt;
-cat raw_trn_X_Y.txt | sed 's/^.//' > trn_X_Y.txt;
-cat raw_tst_X_Xf.txt | sed 's/^.//' > tst_X_Xf.txt;
-cat raw_tst_X_Y.txt | sed 's/^.//' > tst_X_Y.txt;
-
