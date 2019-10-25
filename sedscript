@@ -1,0 +1,3 @@
+sed -i 's/^.//' data.X
+sed -i '1s/^.//' data.X
+sed -i '1s/,//' data.X

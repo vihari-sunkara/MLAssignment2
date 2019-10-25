@@ -1,6 +1,8 @@
 import numpy as np
 from numpy import random as rand
-
+#NEWLY ADDED IMPORTS FOR getReco METHOD
+import subprocess
+from sklearn.datasets import load_svmlight_file
 # DO NOT CHANGE THE NAME OF THIS METHOD OR ITS INPUT OUTPUT BEHAVIOR
 
 # INPUT CONVENTION
@@ -21,8 +23,16 @@ def getTopK(row_data,ind_data):
 
 def getReco( X, k ):
     # Find out how many data points we have
-    n = X.shape[0]
-    L = X.shape[1]
+    subprocess.call(['./predict.sh'])
+    # this has to be using the sir's file
+    #not our test files from assignment data, change the script and the paths
+    filename='score_mat.txt'
+    L=3400 #hardcoded , get this avoided if possible 
+    sparse_matrix, _ = load_svmlight_file( "%s" % filename, multilabel = True, n_features = L, offset = 1 )
+    arr_ll=sparse_matrix
+
+    n = arr_ll.shape[0]
+    L = arr_ll.shape[1]
         
     print("n: ",n)
     print("L: ",L)
@@ -30,14 +40,14 @@ def getReco( X, k ):
     yPred = np.zeros( (n, k) )
     #--MAX LEN IS 100 FOR EACH OF THE ROWS..RECHECK THIS ONCE AND FIND OUT
     for i in range(n):
-        data,row=getTopK(np.array(X[i].data),np.array(X[i].indices))
-        X[i].data = data
-        X[i].indices = row
-        length = len(row)
+        data,row=getTopK(np.array(arr_ll[i].data),np.array(arr_ll[i].indices))
+        arr_ll[i].data = data
+        arr_ll[i].indices = row
+        #length = len(row)
         yPred[i] = row[0:k]
         
     
-    np.savetxt("yPred.txt",yPred.astype(int), fmt='%i')#FORMATTING TO INTEGER VALUED LABELS
+    #np.savetxt("yPred.txt",yPred.astype(int), fmt='%i')#FORMATTING TO INTEGER VALUED LABELS
     # Load and unpack the dummy model
     # The dummy model simply stores the labels in decreasing order of their popularity
 #     npzModel = np.load( "model.npz" )

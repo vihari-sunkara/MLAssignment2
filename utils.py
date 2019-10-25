@@ -62,7 +62,8 @@ def validateAndCleanup( yGold, yPred, k ):
 def getPrecAtK( yGold, yPred, k ):
     n = yGold.shape[0]
     (yGoldNew, yPredNew) = validateAndCleanup( yGold, yPred, k )
-
+    print("yGoldNew shape: ",yGoldNew.shape)
+    print("yPredNew shape: ",yPredNew.shape)
     # Use some fancy indexing (yes, this is the formal term for the technique)
     # to find out where all did we correct predict an item liked by the user
     # Python indexing with arrays creates copies of data so we are safe
