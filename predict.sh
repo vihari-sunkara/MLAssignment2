@@ -6,7 +6,7 @@ model_dir="model"
 trn_ft_file="../assignmentData/trn_X_Xf.txt"
 trn_lbl_file="../assignmentData/trn_X_Y.txt"
 trn_ft_lbl_file="../assignmentData/trn_X_XY.txt"
-tst_ft_file="../assignmentData/tst_X_Xf.txt"
+tst_ft_file="../data.X"
 tst_lbl_file="../assignmentData/tst_X_Y.txt"
 score_file="../score_mat.txt"
 
