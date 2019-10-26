@@ -1,0 +1,7 @@
+sed -i 's/^.//' trn_X_Xf.txt
+sed -i '1s/^.//' trn_X_Xf.txt
+sed -i '1s/,//' trn_X_Xf.txt
+sed -i 's/^.//' trn_X_Y.txt
+sed -i '1s/^.//' trn_X_Y.txt
+sed -i '1s/,//' trn_X_Y.txt
+

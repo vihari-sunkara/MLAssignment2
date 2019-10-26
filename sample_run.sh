@@ -36,7 +36,7 @@ cd shallow
 
 # testing
 # Reads test features (in $tst_ft_file), FastXML model (in $model_dir), and writes test label scores to $score_file
-./bonsai_predict $tst_ft_file $score_file ../$model_dir
+#./bonsai_predict $tst_ft_file $score_file ../$model_dir
 #if [ ! -f ${score_file} ]; then
 #    ./bonsai_predict $tst_ft_file $score_file $model_dir
 #else
@@ -44,5 +44,5 @@ cd shallow
 #fi
 
 # performance evaluation 
-matlab -nodesktop -nodisplay -r "cd('$PWD'); addpath(genpath('../tools')); trn_X_Y = read_text_mat('$trn_lbl_file'); tst_X_Y = read_text_mat('$tst_lbl_file'); wts = inv_propensity(trn_X_Y,0.55,1.5); score_mat = read_text_mat('$score_file'); get_all_metrics(score_mat, tst_X_Y, wts); exit;"
+#matlab -nodesktop -nodisplay -r "cd('$PWD'); addpath(genpath('../tools')); trn_X_Y = read_text_mat('$trn_lbl_file'); tst_X_Y = read_text_mat('$tst_lbl_file'); wts = inv_propensity(trn_X_Y,0.55,1.5); score_mat = read_text_mat('$score_file'); get_all_metrics(score_mat, tst_X_Y, wts); exit;"
 
