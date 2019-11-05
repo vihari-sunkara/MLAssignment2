@@ -1,0 +1,642 @@
+random state=42, full 10k split, defaults:
+
+prediction time: 14.7286 ms
+model size: 51.3055 mb
+n:  10000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 49.624891 seconds 
+yGoldNew shape:  (10000, 3401)
+yPredNew shape:  (10000, 5)
+prec@1: 0.989 prec@3: 0.967 prec@5: 0.947
+mprec@1: 5.600e-03 mprec@3: 4.378e-02 mprec@5: 1.222e-01
+
+
+random state =42 , 0.1 split, trees=2
+prediction time: 7.48206 ms
+model size: 31.1164 mb
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 4.391047 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.809 prec@3: 0.694 prec@5: 0.604
+mprec@1: 3.068e-03 mprec@3: 1.774e-02 mprec@5: 3.864e-02
+
+random state =42 , 0.1 split, defaults:	trees=3:
+prediction time: 12.9193 ms
+model size: 46.8995 mb
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 5.391565 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.808 prec@3: 0.695 prec@5: 0.604
+mprec@1: 3.086e-03 mprec@3: 1.780e-02 mprec@5: 3.798e-02
+
+random state =42 , 0.1 split, defaults:	trees=4:
+prediction time: 34.6245 ms
+model size: 62.6029 mb
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 8.558469 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.814 prec@3: 0.690 prec@5: 0.605
+mprec@1: 3.006e-03 mprec@3: 1.700e-02 mprec@5: 3.750e-02
+
+
+random state =42 , 0.1 split, defaults:	trees=5:
+prediction time: 43.7018 ms
+model size: 77.7129 mb
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 8.319175 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.813 prec@3: 0.694 prec@5: 0.607
+mprec@1: 3.103e-03 mprec@3: 1.719e-02 mprec@5: 3.792e-02
+
+random state =42 , 0.1 split, defaults:	trees=3 w=110:
+prediction time: 12.3436 ms
+model size: 47.5998 mb
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 5.312619 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.821 prec@3: 0.694 prec@5: 0.604
+mprec@1: 3.046e-03 mprec@3: 1.681e-02 mprec@5: 3.780e-02
+
+
+random state =42 , 0.1 split, defaults:	trees=3 w=120:
+prediction time: 12.8781 ms
+model size: 47.107 mb
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 5.529721 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.812 prec@3: 0.694 prec@5: 0.606
+mprec@1: 3.077e-03 mprec@3: 1.764e-02 mprec@5: 3.824e-02
+
+
+
+random state =42 , 0.1 split, defaults:	trees=3 k=90:
+prediction time: 14.3252 ms
+model size: 46.6624 mb
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 5.565720 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.816 prec@3: 0.693 prec@5: 0.606
+mprec@1: 3.005e-03 mprec@3: 1.696e-02 mprec@5: 3.889e-02
+
+random state =42 , 0.1 split, defaults:	trees=3 k=115:
+prediction time: 12.4027 ms
+model size: 47.0645 mb
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 5.642177 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.811 prec@3: 0.693 prec@5: 0.607
+mprec@1: 3.015e-03 mprec@3: 1.781e-02 mprec@5: 3.776e-02
+
+
+
+random state =42 , 0.1 split, defaults:	trees=3 k=130:
+prediction time: 12.806 ms
+model size: 47.4293 mb
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 5.494729 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.817 prec@3: 0.694 prec@5: 0.607
+mprec@1: 2.847e-03 mprec@3: 1.731e-02 mprec@5: 3.798e-02
+
+
+
+
+random state =42 , 0.1 split, defaults:	trees=2 k=90:
+prediction time: 7.26508 ms
+model size: 31.288 mb
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 4.326328 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.818 prec@3: 0.694 prec@5: 0.602
+mprec@1: 2.937e-03 mprec@3: 1.693e-02 mprec@5: 3.787e-02
+
+
+
+
+random state =42 , 0.1 split, defaults:	trees=2 k=110:
+prediction time: 6.87657 ms
+model size: 31.5702 mb
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 4.259934 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.813 prec@3: 0.691 prec@5: 0.606
+mprec@1: 2.950e-03 mprec@3: 1.711e-02 mprec@5: 3.774e-02
+
+
+
+random state =42 , 0.1 split, defaults:	trees=2 k=115:
+prediction time: 7.09432 ms
+model size: 31.4195 mb
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 4.276673 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.819 prec@3: 0.698 prec@5: 0.605
+mprec@1: 2.979e-03 mprec@3: 1.831e-02 mprec@5: 3.772e-02
+
+
+
+
+random state =42 , 0.1 split, defaults:	trees=2 k=120:
+prediction time: 7.82791 ms
+model size: 31.3429 mb
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 4.478508 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.816 prec@3: 0.691 prec@5: 0.601
+mprec@1: 3.396e-03 mprec@3: 1.719e-02 mprec@5: 3.847e-02
+
+
+random state =42 , 0.1 split, defaults:	trees=2 k=130:
+prediction time: 7.00182 ms
+model size: 31.5263 mb
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 4.206102 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.814 prec@3: 0.692 prec@5: 0.602
+mprec@1: 3.024e-03 mprec@3: 1.767e-02 mprec@5: 3.785e-02
+
+
+random state =42 , 0.1 split, defaults:	trees=2 w=100, c=0.1:
+prediction time: 17.7138 ms
+model size: 4.5157 mb
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 5.731588 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.800 prec@3: 0.619 prec@5: 0.536
+mprec@1: 3.851e-04 mprec@3: 3.929e-03 mprec@5: 9.024e-03
+
+
+random state =42 , 0.1 split, defaults:	trees=2 w=100, c=0.5:
+prediction time: 14.7792 ms
+model size: 24.6244 mb
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 5.374804 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.815 prec@3: 0.689 prec@5: 0.604
+mprec@1: 1.451e-03 mprec@3: 1.250e-02 mprec@5: 2.900e-02
+
+
+random state =42 , 0.1 split, defaults:	trees=2 w=100, c=0.01:
+prediction time: 21.9742 ms
+model size: 0.453784 mb
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 5.951824 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.798 prec@3: 0.498 prec@5: 0.386
+mprec@1: 2.941e-04 mprec@3: 8.884e-04 mprec@5: 1.942e-03
+
+random state =42 , 0.1 split, defaults:	trees=3 w=100, c=5:
+prediction time: 10.9665 ms
+model size: 113.75 mb
+11:08:37
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 6.704733 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.786 prec@3: 0.669 prec@5: 0.576
+mprec@1: 5.164e-03 mprec@3: 2.352e-02 mprec@5: 4.818e-02
+
+random state =42 , 0.1 split, defaults:	trees=3 w=100, c=2:
+prediction time: 14.7967 ms
+model size: 77.0108 mb
+10:47:25
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 6.487944 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.812 prec@3: 0.685 prec@5: 0.596
+mprec@1: 4.439e-03 mprec@3: 2.209e-02 mprec@5: 4.543e-02
+
+random state =42 , 0.1 split, defaults:	trees=3 w=100, c=0.5:
+prediction time: 15.1354 ms
+model size: 24.415 mb
+10:26:48
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 5.333583 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.816 prec@3: 0.694 prec@5: 0.607
+mprec@1: 1.665e-03 mprec@3: 1.265e-02 mprec@5: 3.031e-02
+
+random state =42 , 0.1 split, defaults:	trees=3 w=100, c=0.1:
+prediction time: 17.2794 ms
+model size: 4.4326 mb
+10:12:57
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 5.378935 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.800 prec@3: 0.614 prec@5: 0.534
+mprec@1: 3.728e-04 mprec@3: 3.964e-03 mprec@5: 9.236e-03
+
+random state =42 , 0.1 split, defaults:	trees=3 w=100, c=0.01:
+prediction time: 17.9252 ms
+model size: 0.45466 mb
+10:03:21
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 6.090387 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.798 prec@3: 0.500 prec@5: 0.388
+mprec@1: 2.941e-04 mprec@3: 8.965e-04 mprec@5: 1.995e-03
+
+random state =42 , 0.1 split, defaults:	trees=3 w=100, c=5:
+prediction time: 12.344 ms
+model size: 113.861 mb
+13:11:23
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 6.970804 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.782 prec@3: 0.671 prec@5: 0.579
+mprec@1: 5.234e-03 mprec@3: 2.511e-02 mprec@5: 4.942e-02
+
+
+random state =42 , 0.1 split, defaults:	trees=3 w=100, c=2:
+prediction time: 12.9301 ms
+model size: 77.2999 mb
+12:48:23
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 6.350827 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.809 prec@3: 0.688 prec@5: 0.597
+mprec@1: 4.708e-03 mprec@3: 2.297e-02 mprec@5: 4.564e-02
+
+random state =42 , 0.1 split, defaults:	trees=2 w=115, c=0.5:
+prediction time: 10.1452 ms
+model size: 16.2045 mb
+12:27:13
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 5.127951 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.816 prec@3: 0.697 prec@5: 0.606
+mprec@1: 1.568e-03 mprec@3: 1.323e-02 mprec@5: 2.972e-02
+
+random state =42 , 0.1 split, defaults:	trees=2 w=110, c=0.5:
+prediction time: 30.3515 ms
+model size: 32.2872 mb
+12:16:42
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 6.744866 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.818 prec@3: 0.692 prec@5: 0.604
+mprec@1: 1.572e-03 mprec@3: 1.260e-02 mprec@5: 2.909e-02
+
+random state =42 , 0.1 split, defaults:	trees=3 w=110, c=0.5:
+prediction time: 14.9493 ms
+model size: 24.5222 mb
+11:56:43
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 5.314346 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.819 prec@3: 0.687 prec@5: 0.604
+mprec@1: 1.604e-03 mprec@3: 1.211e-02 mprec@5: 2.921e-02
+
+
+c=2, t=4, w=120:
+prediction time: 31.9838 ms
+model size: 102.84 mb
+00:18:50
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 8.358772 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.809 prec@3: 0.686 prec@5: 0.595
+mprec@1: 4.498e-03 mprec@3: 2.217e-02 mprec@5: 4.287e-02
+
+c=5, w=115, t=4:
+prediction time: 27.4913 ms
+model size: 151.851 mb
+23:47:45
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 8.183445 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.790 prec@3: 0.671 prec@5: 0.576
+mprec@1: 5.769e-03 mprec@3: 2.578e-02 mprec@5: 5.023e-02
+
+
+c=2, w=90, t=4:
+prediction time: 26.5853 ms
+model size: 102.461 mb
+23:18:58
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 7.387981 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.805 prec@3: 0.686 prec@5: 0.598
+mprec@1: 4.655e-03 mprec@3: 2.175e-02 mprec@5: 4.386e-02
+
+
+
+c=0.01, w=110, t=4:
+prediction time: 30.4521 ms
+model size: 0.60538 mb
+22:38:31
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 5.996340 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.798 prec@3: 0.497 prec@5: 0.389
+mprec@1: 2.941e-04 mprec@3: 8.839e-04 mprec@5: 2.000e-03
+
+c=1, w=120, t=4:
+prediction time: 27.7129 ms
+model size: 62.6845 mb
+22:26:53
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 6.622641 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.812 prec@3: 0.693 prec@5: 0.602
+mprec@1: 2.913e-03 mprec@3: 1.786e-02 mprec@5: 3.779e-02
+
+c=1, w=115, t=4:
+prediction time: 31.7019 ms
+model size: 62.8682 mb
+22:04:18
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 7.549112 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.815 prec@3: 0.694 prec@5: 0.605
+mprec@1: 2.949e-03 mprec@3: 1.718e-02 mprec@5: 3.741e-02
+
+c=1, w=90, t=4:
+prediction time: 32.5928 ms
+model size: 62.2739 mb
+21:42:34
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 7.510839 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.816 prec@3: 0.697 prec@5: 0.606
+mprec@1: 2.942e-03 mprec@3: 1.753e-02 mprec@5: 3.901e-02
+
+
+c=1, w=95, t=4:
+prediction time: 28.2526 ms
+model size: 62.5347 mb
+21:20:30
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 6.686752 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.817 prec@3: 0.694 prec@5: 0.605
+mprec@1: 2.947e-03 mprec@3: 1.795e-02 mprec@5: 3.865e-02
+
+c=1,  w=110, t=4:
+prediction time: 26.9201 ms
+model size: 62.2983 mb
+20:56:56
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 6.672050 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.814 prec@3: 0.696 prec@5: 0.605
+mprec@1: 2.926e-03 mprec@3: 1.692e-02 mprec@5: 3.742e-02
+
+defaults, iter=25:
+prediction time: 15.585 ms
+model size: 46.8008 mb
+20:00:31
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 5.967309 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.811 prec@3: 0.695 prec@5: 0.607
+mprec@1: 2.979e-03 mprec@3: 1.731e-02 mprec@5: 3.876e-02
+
+defaults:
+prediction time: 25.6669 ms
+model size: 46.7805 mb
+17:29:21
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 8.791152 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.813 prec@3: 0.695 prec@5: 0.606
+mprec@1: 2.958e-03 mprec@3: 1.769e-02 mprec@5: 3.802e-02
+
+
+c=0.5 defaults:
+prediction time: 15.3629 ms
+model size: 24.3094 mb
+17:45:54
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 5.519072 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.820 prec@3: 0.694 prec@5: 0.605
+mprec@1: 1.660e-03 mprec@3: 1.279e-02 mprec@5: 2.990e-02
+
+c=0.5,
+prediction time: 20.0654 ms
+model size: 24.6085 mb
+22:29:51
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 6.487125 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.818 prec@3: 0.692 prec@5: 0.604
+mprec@1: 1.602e-03 mprec@3: 1.285e-02 mprec@5: 2.969e-02
+
+
+c=0.5, w=110, t=2,siter=5, ctype=1
+prediction time: 5.20667 ms
+model size: 17.9936 mb
+23:28:20
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 3.991464 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.815 prec@3: 0.689 prec@5: 0.599
+mprec@1: 1.644e-03 mprec@3: 1.086e-02 mprec@5: 2.683e-02
+
+c=0.5, w=105, t=2, siter=45, ctype=1
+prediction time: 3.90182 ms
+model size: 18.8285 mb
+23:24:25
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 3.227897 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.815 prec@3: 0.680 prec@5: 0.594
+mprec@1: 1.608e-03 mprec@3: 1.100e-02 mprec@5: 2.604e-02
+
+t=2, c=0.5, w=110, ctype=1, siter=20
+prediction time: 6.35446 ms
+model size: 18.7954 mb
+23:18:19
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 4.382752 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.816 prec@3: 0.675 prec@5: 0.597
+mprec@1: 1.546e-03 mprec@3: 1.072e-02 mprec@5: 2.584e-02
+
+c=0.3, t=2, ctype=1
+prediction time: 4.27214 ms
+model size: 11.1783 mb
+00:28:32
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 3.540161 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.813 prec@3: 0.668 prec@5: 0.583
+mprec@1: 1.130e-03 mprec@3: 7.955e-03 mprec@5: 1.818e-02
+
+c=0.4, w=90, ctype=1
+prediction time: 4.63839 ms
+model size: 14.8343 mb
+00:34:40
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 3.933064 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.822 prec@3: 0.685 prec@5: 0.594
+mprec@1: 1.454e-03 mprec@3: 1.077e-02 mprec@5: 2.367e-02
+
+
+c=0.75, w=100, ctype=1, t=2
+prediction time: 3.93927 ms
+model size: 27.1381 mb
+01:15:09
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 3.552363 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.820 prec@3: 0.697 prec@5: 0.604
+mprec@1: 2.446e-03 mprec@3: 1.469e-02 mprec@5: 3.352e-02
+
+
+t=2, w=90, t=2, c=0.6, ctype=1
+prediction time: 4.31537 ms
+model size: 22.0116 mb
+01:39:44
+n:  1000
+L:  3400
+yPred of type  <class 'numpy.ndarray'>  is returned here
+Total time taken is 3.531142 seconds 
+yGoldNew shape:  (1000, 3401)
+yPredNew shape:  (1000, 5)
+prec@1: 0.818 prec@3: 0.691 prec@5: 0.600
+mprec@1: 2.023e-03 mprec@3: 1.249e-02 mprec@5: 3.054e-02
+
+
+
+

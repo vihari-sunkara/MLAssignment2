@@ -67,9 +67,8 @@ int main(int argc, char* argv[])
 
   if(argc < 4)
     help();
-  cout<<"before reading test file";
   string ft_file = string(argv[1]);
-  cout<<"after reading test file"<<ft_file;
+  
   check_valid_filename(ft_file,true);
   SMatF* tst_X_Xf = new SMatF(ft_file);
 
@@ -84,8 +83,8 @@ int main(int argc, char* argv[])
   _float prediction_time, model_size;
   SMatF* score_mat = predict_trees( tst_X_Xf, param, model_dir, prediction_time, model_size );
 
-  cout << "prediction time: " << 1000*(prediction_time/tst_X_Xf->nc) << " ms" << endl; 
-  cout << "model size: " << model_size/1e+6 << " mb" << endl; 
+  //cout << "prediction time: " << 1000*(prediction_time/tst_X_Xf->nc) << " ms" << endl; 
+  //cout << "model size: " << model_size/1e+6 << " mb" << endl; 
 
   PD_DBG { 
     cout << "score_mat.shape = " << score_mat->nr << "x" << score_mat->nc << endl; 

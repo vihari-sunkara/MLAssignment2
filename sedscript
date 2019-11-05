@@ -1,3 +1,4 @@
-sed -i 's/^.//' data.X
-sed -i '1s/^.//' data.X
-sed -i '1s/,//' data.X
+sed -i '1,3d' tst_X_Xf.txt
+sed -i 's/^.//' tst_X_Xf.txt
+sed -i '1s/^.//' tst_X_Xf.txt
+sed -i '1s/,//' tst_X_Xf.txt

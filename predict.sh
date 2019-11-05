@@ -3,11 +3,7 @@
 
 model_dir="model"
 
-trn_ft_file="../assignmentData/trn_X_Xf.txt"
-trn_lbl_file="../assignmentData/trn_X_Y.txt"
-trn_ft_lbl_file="../assignmentData/trn_X_XY.txt"
-tst_ft_file="../data.X"
-tst_lbl_file="../assignmentData/tst_X_Y.txt"
+tst_ft_file="../tst_X_Xf.txt"
 score_file="../score_mat.txt"
 
 #mkdir -p $model_dir
@@ -23,7 +19,12 @@ score_file="../score_mat.txt"
 # Reads test features (in $tst_ft_file), FastXML model (in $model_dir), and writes test label scores to $score_file
 bash sedscript
 cd shallow
+
+date +"%T"
+
 ./bonsai_predict $tst_ft_file $score_file ../$model_dir
+
+date +"%T"
 #if [ ! -f ${score_file} ]; then
 #    ./bonsai_predict $tst_ft_file $score_file $model_dir
 #else

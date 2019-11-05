@@ -3,6 +3,8 @@ from numpy import random as rand
 #NEWLY ADDED IMPORTS FOR getReco METHOD
 import subprocess
 from sklearn.datasets import load_svmlight_file
+from sklearn.datasets import dump_svmlight_file
+from scipy import sparse as sps
 # DO NOT CHANGE THE NAME OF THIS METHOD OR ITS INPUT OUTPUT BEHAVIOR
 
 # INPUT CONVENTION
@@ -23,6 +25,9 @@ def getTopK(row_data,ind_data):
 
 def getReco( X, k ):
     # Find out how many data points we have
+    (n, d) = X.shape
+    dummy = sps.csr_matrix( (n, 1) )
+    dump_svmlight_file( X, dummy,"tst_X_Xf.txt", multilabel = True, zero_based = True, comment = "%d, %d" % (n, d))
     subprocess.call(['./predict.sh'])
     # this has to be using the sir's file
     #not our test files from assignment data, change the script and the paths

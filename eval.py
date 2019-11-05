@@ -14,7 +14,7 @@ tic = tm.perf_counter()
 yPred = predict.getReco( X, 5 )
 toc = tm.perf_counter()
 
-print( "Total time taken is %.6f seconds " % (toc - tic) )
+print( "Total time taken is %0.6f seconds " % (toc - tic) )
 
 # Need to do a bit reshaping since what we get is technically a sparse matrix
 preck = np.asarray( utils.getPrecAtK( y, yPred, 5 ) ).reshape(-1)
